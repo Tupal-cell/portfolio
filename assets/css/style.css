@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 180%;
+  color: #666;
+  text-align: center;
+}
+
+/*Fontawesome*/
+
+/*Flexbox setup*/
+.flexon{
+  display: flex;
+}
+.algcenter{
+ justify-content: center;
+}
+.row{
+  flex-direction: row;
+}
+.flexwrap{
+  flex-wrap: wrap;
+}
+.col{
+  flex-flow: column;
+}
+.letspace{
+  letter-spacing: 1.40rem;
+
+}
+
+/* NavBar */
+
+nav{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  transition: .5s;
+  z-index: 5;
+  opacity: 1;
+}
+nav ul{
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li{
+  list-style: none;
+  margin-top: 25px;
+  line-height: none;
+  font-size: 18px;
+  color: white;
+  padding: 5px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 1s;
+  text-shadow: 0 0 10px #06182E;
+}
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+nav ul li.active, nav ul li:hover{color: orange;}
+
+/* -----------------------------*/
+
+/* Background parallax */
+
+.parallax1 {
+  background: url("../img/deskfullhd.jpg");
+  min-height: 100%;
+}
+.parallax2 {
+  background: url("../img/par2.jpg");
+  min-height: 60%;
+}
+.parallax1, .parallax2 {
+  position: relative;
+  opacity: .75;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* -----------------------------*/
+
+/* Header text */
+
+.heading {
+  position: absolute;
+  color: #fff;
+  font-size: 450%;
+  top: 38%;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-shadow: 0 0 10px #000;
+}
+.heading2 {
+  position: absolute;
+  color: #fff;
+  font-size: 150%;
+  top: 50%;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-shadow: 0 0 10px #000;
+}
+/* profil pic */
+
+.headof {
+  border-radius: 50%;
+  border-color: #4B5D7A;
+  border-style: ridge;
+}
+
+/* -----------------------------*/
+
+/* timeline */
+
+.timeline {
+  white-space: nowrap;
+  overflow-x: scroll;
+  padding: 30px 0 10px 0;
+  position: relative;
+  margin: 6vh 0 6vh 0;
+}
+.timeline::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #4B5D7A; 
+}
+/* Add a thumb */
+.timeline::-webkit-scrollbar-thumb {
+  background: #06182E;
+}
+
+.entry {
+  display: inline-block;
+  vertical-align: top;
+  background: #13519C;
+  color: #fff;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  border-top: 8px solid #06182E;
+  border-radius: 3px;
+  min-width: 200px;
+  max-width: 500px;
+}
+
+.entry img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.entry h1 {
+  color: #fff;
+  font-size: 18px;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+/* Content */
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.box {
+  box-sizing: border-box;
+  width: auto;
+  height: 50vh;
+  margin-top: 5px;
+  background-color: #f2f2f2;
+}
+
+.heading-sm {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  color: #fff;
+  font-size: 250%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 0 0 10px #000;
+}
+.onerow{
+  width: 98%;
+  padding: 0;
+  text-align: center;
+  font-size: 150%;
+}
+section {
+  overflow: auto;
+  padding: 50px 20%;
+  letter-spacing: 0.25rem;
+  line-height: 1.8rem;
+}
+
+.dark{
+  overflow: auto;
+  padding: 50px 80px;
+  background-color:  #4B5D7A;
+  color: #f2f2f2;
+}
+
+
+/* -----------------------------*/
+
+/* Formulaire */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+/* MediaQueries */
+
+@media (max-width: 900px){
+  nav ul li{
+    font-size: 12px;
+  }
+  .heading{
+    font-size: 250%;
+  }
+}
+@media (max-width: 600px){
+  .heading{
+    font-size: 250%;
+  }
+  .heading-sm{
+    font-size: 180%
+  }
+  .onerow {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  nav ul li{
+    font-size: 10px;
+  }
+}
+
+
