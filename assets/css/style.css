@@ -30,9 +30,11 @@ body, html {
   letter-spacing: 1.40rem;
 
 }
-.spacebet{
-  justify-content: space-between;
+.spacear{
+  justify-content: space-around;
 }
+
+
 
 /* NavBar */
 
@@ -129,8 +131,16 @@ nav ul li.active, nav ul li:hover{color: orange;}
 
 /* Parcours list */
 
-
-
+section div ul {
+  list-style-type: none;
+}
+section div ul li{
+  padding: 15px;
+  margin: 15px;
+  background-color: #f2f2f2;
+  color: #000; 
+  border-radius: 5px;
+}
 
 
 /* Content */
