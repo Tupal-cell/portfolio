@@ -87,9 +87,9 @@ section div ul li{
   background-color: #f2f2f2;
   color: #000; 
   border-radius: 5px;
-}
-ul p {
-  
+  -webkit-box-shadow: 4px 3px 15px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 3px 15px -5px rgba(0,0,0,0.75);
+  box-shadow: 4px 3px 15px -5px rgba(0,0,0,0.75);
 }
 
 /* Background parallax */
