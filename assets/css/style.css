@@ -80,6 +80,7 @@ nav ul li.active, nav ul li:hover{color: orange;}
 
 section div ul {
   list-style-type: none;
+  padding-inline-start: 0px
 }
 section div ul li{
   padding: 15px;
@@ -89,7 +90,7 @@ section div ul li{
   border-radius: 5px;
   -webkit-box-shadow: 4px 3px 15px -5px rgba(0,0,0,0.75);
   -moz-box-shadow: 4px 3px 15px -5px rgba(0,0,0,0.75);
-  box-shadow: 4px 3px 15px -5px rgba(0,0,0,0.75);
+  box-shadow: 4px 3px 15px -5px rgba(0,0,0,0.75);  
 }
 
 /* Background parallax */
