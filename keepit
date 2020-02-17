@@ -1,24 +1,4 @@
-     <h2>Parcours</h2>
-        <div class="timeline">
-          <div class="entry">
-            <h1>2013</h1>
-            Conseillé de vente <br> DojoGames
-          </div>
-          <div class="entry">
-            <h1>2014-2015</h1>
-            Vendeur <br> Micromania
-          </div>
-          <div class="entry">
-            <h1>2015-2017</h1>
-            Employé de Restauration polyvalent <Br> Grand café d'Orléans
-          </div>
-          <div class="entry">
-            <h1>2018-2019</h1>
-            Equipier <Br> McDonald's
-          </div>
-        </div>
-
-        Roadmap projet
+Roadmap projet
         
         CV : 1 partie statique. 1 partie affiche bdd. partie contact (mail on bdd)
         Admin : ajouter des lignes en base pour la partie affiche bdd
