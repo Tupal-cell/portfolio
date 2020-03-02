@@ -178,6 +178,9 @@ section {
   letter-spacing: 0.25rem;
   line-height: 1.8rem;
 }
+section#parc li :hover {
+color: orange
+}
 
 .dark{
   overflow: auto;
@@ -244,3 +247,11 @@ input[type=submit]:hover {
 }
 
 
+/*ModalBox*/
+
+.modalbox{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+}
