@@ -178,8 +178,9 @@ section {
   letter-spacing: 0.25rem;
   line-height: 1.8rem;
 }
-section#parc li :hover {
-color: orange
+section#parc div ul li :hover {
+  color: orange;
+  cursor: pointer;
 }
 
 .dark{
