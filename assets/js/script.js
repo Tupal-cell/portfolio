@@ -1,14 +1,28 @@
 document.addEventListener("DOMContentLoaded", function(){
-  console.log('loaded')
-  window.onload= function(e){
-    let click = document.getElementById('sub')
-    click.onclick = function(){
-    let your_name = document.getElementById('name').value;
-    let your_email = document.getElementById('email').value;
-    let your_phone = document.getElementById('phone').value;
-    let your_subject = document.getElementById('subject').value;
-    console.log(('  your name is ' + your_name) +( '  your email is ' + your_email) + ('  your_phone is '+ your_phone))
-    event.preventDefault();
-    }   
+
+
+
+var modal = document.querySelectorAll(".modalbox");
+
+// Get the button that opens the modal
+var btn = document.querySelectorAll("#modal");
+
+// Get the <span> element that closes the modal
+var span = document.querySelectorAll(".close");
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
 }
-})
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}})
